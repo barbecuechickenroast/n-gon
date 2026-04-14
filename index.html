@@ -351,6 +351,10 @@
     <script src="js/lore.js"></script>
     <script src="js/engine.js"></script>
     <script src="js/index.js"></script>
+    window.addEventListener('beforeunload', (event) => {
+        event.preventDefault();
+        event.returnValue = '';
+    });
 </body>
 
 </html>
