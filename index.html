@@ -384,10 +384,10 @@
     <script src="js/hover-help.js"></script>
     <script src="js/index.js"></script>
     <script>
-        window.addEventListener('beforeunreload', (event) => {
-            event.preventdefault();
-            event.returnvalue = '';
-        }); 
+        window.addEventListener('beforeunload', (event) => {
+            event.preventDefault();
+            event.returnValue = '';
+        });
     </script>
 </body>
 
